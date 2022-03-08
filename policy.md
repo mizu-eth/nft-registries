@@ -158,6 +158,8 @@ The token ID of the NFT being registered within the collection.
 
 This field must contain the chain ID of the EVM blockchain on which the NFT resides (e.g. 1 for Ethereum, 100 for Gnosis Chain). For informational purposes, a list of chain IDs may for instance be found here: https://chainlist.org/. This website is not to be considered authoritative however.
 
+**For now, only Ethereum is allowed, so the value must be 1 (and the NFT must reside on the Ethereum chain).**
+
 #### 7. Proof
 
 The proof field must be used to provide proof that minting of the NFT was authorized by the author when this is not obvious or if there are reasons to be suspicious.
@@ -213,6 +215,8 @@ The address of the NFT collection.
 #### 5. Chain ID
 
 Same as A.6.
+
+**For now, only Ethereum is allowed, so the value must be 1 (and the NFT collection must reside on the Ethereum chain).**
 
 #### 6. Proof
 
