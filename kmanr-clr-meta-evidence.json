@@ -1,0 +1,77 @@
+{
+  "title": "Remove a nft from Authentic NFTs",
+  "description": "Someone requested to remove a nft from Authentic NFTs",
+  "rulingOptions": {
+    "titles": [
+      "Yes, Remove It",
+      "No, Don't Remove It"
+    ],
+    "descriptions": [
+      "Select this if you think the nft does not comply with the required criteria and should be removed.",
+      "Select this if you think the nft complies with the required criteria and should not be removed."
+    ]
+  },
+  "category": "Curated Lists",
+  "question": "Does the nft comply with the required criteria?",
+  "fileURI": "/ipfs/QmVntT2i7MkxDVhe5XVRQZyRBtdPyBKWajytFQ39C5AFZs/policy0.3.pdf",
+  "evidenceDisplayInterfaceURI": "/ipfs/QmNhJXtMrxeJu4fpchPruGrL93bm2M4VmDZ8pj4x6FqnHJ/index.html",
+  "metadata": {
+    "tcrTitle": "Authentic NFTs",
+    "tcrDescription": "The Kleros Authentic NFT Registry (KANR) and Kleros Authentic NFT Collection Registry (KANCR) are lists of authentic NFTs and NFT collections respectively.",
+    "columns": [
+      {
+        "label": "Thumbnail",
+        "description": "The NFT thumbnail.",
+        "type": "image",
+        "isIdentifier": false
+      },
+      {
+        "label": "Name",
+        "description": "Offical name of the NFT.",
+        "type": "text",
+        "isIdentifier": true
+      },
+      {
+        "label": "Author",
+        "description": "Author's name.",
+        "type": "text",
+        "isIdentifier": true
+      },
+      {
+        "label": "Collection",
+        "description": "The collection's address.",
+        "type": "address",
+        "isIdentifier": true
+      },
+      {
+        "label": "Token ID",
+        "description": "The token ID.",
+        "type": "number",
+        "isIdentifier": true
+      },
+      {
+        "label": "Chain ID",
+        "description": "The ID of the chain on which the NFT resides.",
+        "type": "number",
+        "isIdentifier": true
+      },
+      {
+        "label": "Proof",
+        "description": "Optional proof of authenticity",
+        "type": "file",
+        "allowedFileTypes": "pdf txt"
+      },
+      {
+        "label": "Attribution",
+        "description": "Optional attribution",
+        "type": "text"
+      }
+    ],
+    "itemName": "nft",
+    "itemNamePlural": "nfts",
+    "logoURI": "/ipfs/QmVNQsfSt1NTnGPANbpANsacnLRPNowcwD2LVNkGnqgLQU/list.svg",
+    "requireRemovalEvidence": true,
+    "isTCRofTCRs": false,
+    "relTcrDisabled": true
+  }
+}

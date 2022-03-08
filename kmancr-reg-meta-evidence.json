@@ -1,0 +1,70 @@
+{
+  "title": "Add a nft collection to Authentic NFT Collections",
+  "description": "Someone requested to add a nft collection to Authentic NFT Collections",
+  "rulingOptions": {
+    "titles": [
+      "Yes, Add It",
+      "No, Don't Add It"
+    ],
+    "descriptions": [
+      "Select this if you think the nft collection complies with the required criteria and should be added.",
+      "Select this if you think the nft collection does not comply with the required criteria and should not be added."
+    ]
+  },
+  "category": "Curated Lists",
+  "question": "Does the nft collection comply with the required criteria?",
+  "fileURI": "/ipfs/QmVntT2i7MkxDVhe5XVRQZyRBtdPyBKWajytFQ39C5AFZs/policy0.3.pdf",
+  "evidenceDisplayInterfaceURI": "/ipfs/QmNhJXtMrxeJu4fpchPruGrL93bm2M4VmDZ8pj4x6FqnHJ/index.html",
+  "metadata": {
+    "tcrTitle": "Authentic NFT Collections",
+    "tcrDescription": "A list of authentic NFT collections.",
+    "columns": [
+      {
+        "label": "Thumbnail",
+        "description": "A thumbnail representative of the collection",
+        "type": "image",
+        "isIdentifier": false
+      },
+      {
+        "label": "Name",
+        "description": "Official name of the collection",
+        "type": "text",
+        "isIdentifier": true
+      },
+      {
+        "label": "Author",
+        "description": "Author's name if relevant",
+        "type": "text",
+        "isIdentifier": true
+      },
+      {
+        "label": "Collection",
+        "description": "The collection's address",
+        "type": "address",
+        "isIdentifier": true
+      },
+      {
+        "label": "Chain ID",
+        "description": "The chain ID of the network on which the collection resides",
+        "type": "number",
+        "isIdentifier": true
+      },
+      {
+        "label": "Proof",
+        "description": "Optional proof of authenticity",
+        "type": "file",
+        "allowedFileTypes": "pdf txt"
+      },
+      {
+        "label": "Attribution",
+        "description": "Optional attribution",
+        "type": "text"
+      }
+    ],
+    "itemName": "nft collection",
+    "itemNamePlural": "nft collections",
+    "logoURI": "/ipfs/QmVNQsfSt1NTnGPANbpANsacnLRPNowcwD2LVNkGnqgLQU/list.svg",
+    "requireRemovalEvidence": true,
+    "isTCRofTCRs": false
+  }
+}
