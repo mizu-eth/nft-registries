@@ -64,7 +64,7 @@
       {
         "label": "Attribution",
         "description": "Optional attribution",
-        "type": "text"
+        "type": "long text"
       }
     ],
     "itemName": "NFT",

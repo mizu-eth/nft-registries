@@ -74,7 +74,7 @@ def itemName: if nft then "NFT" else "NFT collection" end;
       {
         "label": "Attribution",
         "description": "Optional attribution",
-        "type": "text"
+        "type": "long text"
       }
     ],
     "itemName": "\(itemName)",

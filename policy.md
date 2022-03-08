@@ -110,7 +110,7 @@ Following are the fields of each entry in the KMANR. Detailed rules for these fi
 5. Token ID (number, indexed): The token ID
 6. Chain ID (number, indexed): The chain ID of the network on which the NFT resides
 7. Proof (file, pdf or txt): Optional proof of authenticity
-8. Attribution (text): Optional attribution
+8. Attribution (long text): Optional attribution
 
 #### 1. Thumbnail
 
@@ -192,7 +192,7 @@ Following are the fields of each entry in the KMANCR. Detailed rules for these f
 4. Collection (address, indexed): The collection's address
 5. Chain ID (number, indexed): The chain ID of the network on which the NFT resides
 6. Proof (file, pdf or txt): Optional proof of authenticity
-7. Attribution (text): Optional attribution
+7. Attribution (long text): Optional attribution
 
 #### 1. Thumbnail
 
