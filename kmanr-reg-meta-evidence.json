@@ -17,41 +17,41 @@
   "evidenceDisplayInterfaceURI": "/ipfs/QmNhJXtMrxeJu4fpchPruGrL93bm2M4VmDZ8pj4x6FqnHJ/index.html",
   "metadata": {
     "tcrTitle": "Authentic NFTs",
-    "tcrDescription": "The Kleros Authentic NFT Registry (KANR) and Kleros Authentic NFT Collection Registry (KANCR) are lists of authentic NFTs and NFT collections respectively.",
+    "tcrDescription": "A list of authentic NFTs.",
     "columns": [
       {
         "label": "Thumbnail",
-        "description": "The NFT thumbnail.",
+        "description": "The NFT's thumbnail",
         "type": "image",
         "isIdentifier": false
       },
       {
         "label": "Name",
-        "description": "Offical name of the NFT.",
+        "description": "Official name of the NFT",
         "type": "text",
         "isIdentifier": true
       },
       {
         "label": "Author",
-        "description": "Author's name.",
+        "description": "Author's name",
         "type": "text",
         "isIdentifier": true
       },
       {
         "label": "Collection",
-        "description": "The collection's address.",
+        "description": "The collection's address",
         "type": "address",
         "isIdentifier": true
       },
       {
         "label": "Token ID",
-        "description": "The token ID.",
+        "description": "The token ID",
         "type": "number",
         "isIdentifier": true
       },
       {
         "label": "Chain ID",
-        "description": "The ID of the chain on which the NFT resides.",
+        "description": "The ID of the chain on which the NFT resides",
         "type": "number",
         "isIdentifier": true
       },

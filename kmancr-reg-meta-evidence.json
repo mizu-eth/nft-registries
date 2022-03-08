@@ -45,7 +45,7 @@
       },
       {
         "label": "Chain ID",
-        "description": "The chain ID of the network on which the collection resides",
+        "description": "The ID of the chain on which the collection resides",
         "type": "number",
         "isIdentifier": true
       },
@@ -65,6 +65,7 @@
     "itemNamePlural": "nft collections",
     "logoURI": "/ipfs/QmVNQsfSt1NTnGPANbpANsacnLRPNowcwD2LVNkGnqgLQU/list.svg",
     "requireRemovalEvidence": true,
-    "isTCRofTCRs": false
+    "isTCRofTCRs": false,
+    "relTcrDisabled": true
   }
 }
