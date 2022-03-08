@@ -1,23 +1,23 @@
 {
-  "title": "Add a nft to Authentic NFTs",
-  "description": "Someone requested to add a nft to Authentic NFTs",
+  "title": "Add an NFT to the Authentic NFT Registry",
+  "description": "Someone requested to add an NFT to the Authentic NFT Registry",
   "rulingOptions": {
     "titles": [
       "Yes, Add It",
       "No, Don't Add It"
     ],
     "descriptions": [
-      "Select this if you think the nft complies with the required criteria and should be added.",
-      "Select this if you think the nft does not comply with the required criteria and should not be added."
+      "Select this if you think the NFT complies with the required criteria and should be added.",
+      "Select this if you think the NFT does not comply with the required criteria and should not be added."
     ]
   },
   "category": "Curated Lists",
-  "question": "Does the nft comply with the required criteria?",
+  "question": "Does the NFT comply with the required criteria?",
   "fileURI": "/ipfs/QmVntT2i7MkxDVhe5XVRQZyRBtdPyBKWajytFQ39C5AFZs/policy0.3.pdf",
   "evidenceDisplayInterfaceURI": "/ipfs/QmNhJXtMrxeJu4fpchPruGrL93bm2M4VmDZ8pj4x6FqnHJ/index.html",
   "metadata": {
-    "tcrTitle": "Authentic NFTs",
-    "tcrDescription": "A list of authentic nfts",
+    "tcrTitle": "Authentic NFT Registry",
+    "tcrDescription": "A list of authentic NFTs",
     "columns": [
       {
         "label": "Thumbnail",
@@ -67,8 +67,8 @@
         "type": "text"
       }
     ],
-    "itemName": "nft",
-    "itemNamePlural": "nfts",
+    "itemName": "NFT",
+    "itemNamePlural": "NFTs",
     "logoURI": "/ipfs/QmVNQsfSt1NTnGPANbpANsacnLRPNowcwD2LVNkGnqgLQU/list.svg",
     "requireRemovalEvidence": true,
     "isTCRofTCRs": false,

@@ -5,12 +5,12 @@
 def reg: $reg;
 def nft: $nft;
 
-def tcrTitle: if nft then "Authentic NFTs" else "Authentic NFT Collections" end;
-def itemName: if nft then "nft" else "nft collection" end;
+def tcrTitle: if nft then "Authentic NFT Registry" else "Authentic NFT Collection Registry" end;
+def itemName: if nft then "NFT" else "NFT collection" end;
 
 {
-  "title": "\(if reg then "Add" else "Remove" end) a \(itemName) \(if reg then "to" else "from" end) \(tcrTitle)",
-  "description": "Someone requested to \(if reg then "add" else "remove" end) a \(itemName) \(if reg then "to" else "from" end) \(tcrTitle)",
+  "title": "\(if reg then "Add" else "Remove" end) an \(itemName) \(if reg then "to" else "from" end) the \(tcrTitle)",
+  "description": "Someone requested to \(if reg then "add" else "remove" end) an \(itemName) \(if reg then "to" else "from" end) the \(tcrTitle)",
   "rulingOptions": {
     "titles": [
       "Yes, \(if reg then "Add" else "Remove" end) It",

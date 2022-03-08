@@ -1,23 +1,23 @@
 {
-  "title": "Remove a nft collection from Authentic NFT Collections",
-  "description": "Someone requested to remove a nft collection from Authentic NFT Collections",
+  "title": "Remove an NFT collection from the Authentic NFT Collection Registry",
+  "description": "Someone requested to remove an NFT collection from the Authentic NFT Collection Registry",
   "rulingOptions": {
     "titles": [
       "Yes, Remove It",
       "No, Don't Remove It"
     ],
     "descriptions": [
-      "Select this if you think the nft collection does not comply with the required criteria and should be removed.",
-      "Select this if you think the nft collection complies with the required criteria and should not be removed."
+      "Select this if you think the NFT collection does not comply with the required criteria and should be removed.",
+      "Select this if you think the NFT collection complies with the required criteria and should not be removed."
     ]
   },
   "category": "Curated Lists",
-  "question": "Does the nft collection comply with the required criteria?",
+  "question": "Does the NFT collection comply with the required criteria?",
   "fileURI": "/ipfs/QmVntT2i7MkxDVhe5XVRQZyRBtdPyBKWajytFQ39C5AFZs/policy0.3.pdf",
   "evidenceDisplayInterfaceURI": "/ipfs/QmNhJXtMrxeJu4fpchPruGrL93bm2M4VmDZ8pj4x6FqnHJ/index.html",
   "metadata": {
-    "tcrTitle": "Authentic NFT Collections",
-    "tcrDescription": "A list of authentic nft collections",
+    "tcrTitle": "Authentic NFT Collection Registry",
+    "tcrDescription": "A list of authentic NFT collections",
     "columns": [
       {
         "label": "Thumbnail",
@@ -61,8 +61,8 @@
         "type": "text"
       }
     ],
-    "itemName": "nft collection",
-    "itemNamePlural": "nft collections",
+    "itemName": "NFT collection",
+    "itemNamePlural": "NFT collections",
     "logoURI": "/ipfs/QmVNQsfSt1NTnGPANbpANsacnLRPNowcwD2LVNkGnqgLQU/list.svg",
     "requireRemovalEvidence": true,
     "isTCRofTCRs": false,
