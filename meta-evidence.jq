@@ -66,6 +66,12 @@ def itemName: if nft then "NFT" else "NFT collection" end;
         "isIdentifier": true
       },
       {
+        "label": "Webpage",
+        "description": "The \(if nft then "NFT" else "collection" end)'s canonical webpage",
+        "type": "link",
+        "isIdentifier": false
+      },
+      {
         "label": "Proof",
         "description": "Optional proof of authenticity",
         "type": "file",

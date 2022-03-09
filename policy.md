@@ -109,8 +109,9 @@ Following are the fields of each entry in the KMANR. Detailed rules for these fi
 4. Collection (address, indexed): The collection's address
 5. Token ID (number, indexed): The token ID
 6. Chain ID (number, indexed): The chain ID of the network on which the NFT resides
-7. Proof (file, pdf or txt): Optional proof of authenticity
-8. Attribution (long text): Optional attribution
+7. Webpage (link): The NFT's canonical webpage
+8. Proof (file, pdf or txt): Optional proof of authenticity
+9. Attribution (long text): Optional attribution
 
 #### 1. Thumbnail
 
@@ -160,7 +161,16 @@ This field must contain the chain ID of the EVM blockchain on which the NFT resi
 
 **For now, only Ethereum is allowed, so the value must be 1 (and the NFT must reside on the Ethereum chain).**
 
-#### 7. Proof
+#### 7. Webpage
+
+A link to the NFT's webpage.
+
+1. The webpage must be either:
+   a. the NFT's official page if available (for instance, a link to the NFT's page on the platform through which it was minted) as long as the collection address and token ID, or a link to an aggregator with that information are provided; or, if unavailable
+   b. the NFT's page on a trustworthy NFT aggregator that displays or links to the NFT's collection address and token ID.
+2. The page must be live at the time of submission and must not become permanently unavailable.
+
+#### 8. Proof
 
 The proof field must be used to provide proof that minting of the NFT was authorized by the author when this is not obvious or if there are reasons to be suspicious.
 
@@ -173,7 +183,7 @@ Such a proof can for instance be in the form of a public message written by an a
 
 In most cases, a proof will not be needed. For instance, if the NFT was minted by the author themselves on a reputable NFT platform in which the author's Twitter account has been verified, or if the author's website links back to the author's NFT collection. On the other hand, if the minter's social media account or website has only recently been active or publishing works, this would be considered cause for suspicion and further proof must be provided at the time of submission, in the form of progress photos or snapshots for instance.
 
-#### 8. Attribution
+#### 9. Attribution
 
 Attribution for works the NFT's content derives from, as per I.A.3..
 
@@ -191,8 +201,9 @@ Following are the fields of each entry in the KMANCR. Detailed rules for these f
 3. Author (text, indexed): Author's name if relevant
 4. Collection (address, indexed): The collection's address
 5. Chain ID (number, indexed): The chain ID of the network on which the NFT resides
-6. Proof (file, pdf or txt): Optional proof of authenticity
-7. Attribution (long text): Optional attribution
+6. Webpage (link): The collection's canonical webpage
+7. Proof (file, pdf or txt): Optional proof of authenticity
+8. Attribution (long text): Optional attribution
 
 #### 1. Thumbnail
 
@@ -218,10 +229,19 @@ Same as A.6.
 
 **For now, only Ethereum is allowed, so the value must be 1 (and the NFT collection must reside on the Ethereum chain).**
 
-#### 6. Proof
+#### 6. Webpage
+
+A link to the collection's webpage.
+
+1. The webpage must be either:
+   a. the collection's official page if available (for instance, a link to the collection's page on the platform through which it was created) as long as the collection's address, or a link to an aggregator with that information is provided; or, if unavailable
+   b. the collection's page on a trustworthy NFT aggregator that displays or links to the collection's address.
+2. The page must be live at the time of submission and must not become permanently unavailable.
+
+#### 7. Proof
 
 If a proof would be needed to include any of the NFTs in this collection into the KMANR, a document must be provided here with relevant proofs —except for NFTs already registered in the KMANR— following the same rules as A.7. except that the maximum file size is increased to 5MB.
 
-#### 7. Attribution
+#### 8. Attribution
 
 As per I.A.3., attribution information relevant to most NFTs in the collection must be provided here following the same rules as A.8.., except for NFTs already registered in the KMANR. If only one or a few NFTs in the collection are affected by some attribution, they must be registered in the KMANR with proper attribution or the collection will not be eligible for inclusion into the KMANCR or will become eligible for removal.

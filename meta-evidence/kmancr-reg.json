@@ -50,6 +50,12 @@
         "isIdentifier": true
       },
       {
+        "label": "Webpage",
+        "description": "The collection's canonical webpage",
+        "type": "link",
+        "isIdentifier": false
+      },
+      {
         "label": "Proof",
         "description": "Optional proof of authenticity",
         "type": "file",
