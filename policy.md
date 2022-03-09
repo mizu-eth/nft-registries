@@ -74,6 +74,7 @@ There is no requirement for ERC-721 or ERC-1155 compliance or even that the coll
    f. Imitating a work's style or an artist's style does not require any attribution.
    g. Reusing a technique from another work does not require attribution.
    h. Reusing a short melodic or rhythmic segment, a harmonic arrangement, a timbre, or other similar elements of a musical work, in a larger work (i.e. a work larger than any of these elements) does not require attribution if they are reused without making use of the original recording or a part thereof.
+   i. An illustration made entirely or in part by tracing another work or other works (i.e. precisely copying the lines and shapes of photos or illustrations using semi-transparent layers) must come with attribution of those works.
 
 4. These rules apply to works created at any time in history. This means that an NFT of the Mona Lisa can never be accepted in this registry. Similarly an NFT of a work by a recently deceased artist cannot be included in this registry even with the approval of their estate or heirs unless the artist consented to it before their death, following the conditions laid out in 1.
 
