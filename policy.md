@@ -177,7 +177,7 @@ In most cases, a proof will not be needed. For instance, if the NFT was minted b
 
 Attribution for works the NFT's content derives from, as per I.A.3..
 
-1. Each entry must be on a separate line (but for submissions made at this time, semicolons will be allowed instead of new lines).
+1. Each entry must be on a separate line.
 2. Attribution must be provided in English but names and titles may be left in their original language.
 3. A reasonable effort must be made to make the attribution unambiguous and if possible, it must be easy to find more details about the work from a web search of the attribution's text.
 4. It is recommended to provide attribution in the description or title of the NFT as well and if an attribution error has been made in the NFT's description, title, or content, this must be explicitly pointed out and corrected in the attribution field.
