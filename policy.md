@@ -245,3 +245,9 @@ If a proof would be needed to include any of the NFTs in this collection into th
 #### 8. Attribution
 
 As per I.A.3., attribution information relevant to most NFTs in the collection must be provided here following the same rules as A.8.., except for NFTs already registered in the KMANR. If only one or a few NFTs in the collection are affected by some attribution, they must be registered in the KMANR with proper attribution or the collection will not be eligible for inclusion into the KMANCR or will become eligible for removal.
+
+## III. Miscellaneous Technical Requirements
+
+1. A submission entry's json file must not exceed 10kB (10,000 bytes) in size.
+2. If the name or author fields exceed 400 unicode codepoints, their ends may be truncated down to 400 codepoints or more, in which case the string "..." or ", ..." must be added to the end as appropriate.
+3. If the attribution field exceeds 800 unicode codepoints, it may be truncated down to 800 codepoints or more (while not truncating any of the kept lines), in which case a line containing only an IPFS link of the form /ipfs/... to a text file containing the rest of the lines must be added at the end.
