@@ -1,5 +1,7 @@
 # Kleros Minimal Authentic NFT Registry and Kleros Minimal Authentic NFT Collection Registry Policy
 
+ 
+
 The Kleros Minimal Authentic NFT Registry (KMANR) and Kleros Minimal Authentic NFT Collection Registry (KMANCR) are lists of authentic NFTs and NFT collections respectively.
 
 The purpose of these registries is to provide some level of verification that the works accepted therein were minted with the consent of their creators as well as a few other side benefits.
@@ -11,6 +13,7 @@ This preamble seeks to clarify the purpose and methodology behind the registry p
 ### Methodology
 
 From most to least prioritized, these were the directing principles in the drafting of this policy:
+
 1. This policy should not be responsible for any significant loss of artistic freedom.
 2. NFTs certified through this registry should be minted by the author or with the author's direct or indirect consent. It should not be possible to pass off another's work as one's own.
 3. NFTs certified through this registry should be clearly and unambiguously unique within the bounds explicitly or implicitly defined by the minter at the time the NFTs were put on the market.
@@ -23,6 +26,7 @@ The only reason for the existence of the KMANCR is to simplify the registration 
 ### Inclusion Criteria Summary
 
 To summarize section I.A., an NFT must must broadly follow the following rules to be accepted in the KMANR:
+
 1. It must be minted with the consent of the content's legitimate owners.
 2. It must be meaningfully different from preceding works.
 3. If it is derivative, proper attribution must be provided.
@@ -34,6 +38,7 @@ Note: One should be careful not to confuse the concepts of the owner of a work a
 ### Attribution Rationale
 
 Since this policy is quite lenient regarding the minting of derivative works, it is important to prevent anyone minting derivative works from explicitly or implicitly claiming the credit for the work they derived from. The attribution requirements of this policy being quite strict, in order not to penalize good faith omissions or errors at the time of minting, attribution is to be given in the attribution field of the registry, rather than requiring it in the NFT's description for instance. In that way, even an NFT lacking correct attribution may be eligible for inclusion if full attribution is provided in the registry itself.
+
 For collectors, attribution should be a major factor when pricing an NFT, so it is very highly recommended that all NFT platformsintegrating with these registries display the attribution field at least as prominently as the NFT's description. This attribution information might also help when trying to determine whether to accept an NFT in a registry with a stricter policy.
 
 ### Submission Rights Rationale
@@ -51,9 +56,13 @@ There is no requirement for ERC-721 or ERC-1155 compliance or even that the coll
 1. An NFT is eligible for inclusion in the KMANR if it was minted by its content's legitimate owner or by a person authorized to do so by the owner of said content. A person is considered to be the legitimate owner of a work for the purpose of this policy if:
    a. they are the author of the work and have not foregone their right to the work through an informed non-coercive agreement; or
    b. they have been given ownership of the work (including an at least implicit right to mint NFTs) by a previous owner of the work through an informed non-coercive agreement and have not since foregone their right to the work through an informed non-coercive agreement.
+
    An agreement would be considered to be coercive for the purpose of this policy if it were made under threat of violence or in opposition to one of the party's human rights. So for instance, if a country were to enact a law requiring all rights to its citizens' works be transferred to the king, this king would not be considered a legitimate owner of these works for the purpose of this policy.
+
    An agreement is considered informed for the purpose of this policy if it is made between parties in full possession of their mental faculties. A person in a fairly advanced stage of Alzheimer's disease would for instance not be considered able to conclude an informed agreement.
+
    The word person here does not only refer to natural persons but also to companies, associations, institutions, DAOs, and so on.
+
    In case a work has multiple owners, all owners must agree to the minting of NFTs of that work for them to be accepted in the registry unless they have all agreed to another arrangement beforehand. Persons having substantially worked together on a work will be considered the initial co-owners of the work unless there is an agreement otherwise (e.g. as part of an employment contract).
 
 2. If the content of an NFT is not meaningfully different from another existing work that predates it (whether or not it has been released as an NFT), it must be rejected. Since it is near impossible to define a concept of meaningful difference, examples are provided below which should be interpolated and extrapolated as necessary —and using common sense— to generate new judgements:
@@ -83,9 +92,13 @@ There is no requirement for ERC-721 or ERC-1155 compliance or even that the coll
    b. the original work's authentic NFTs were still in the possession of the minter and not up for sale or auction when the deriving work was minted, and the deriving work's NFTs would have been easily visible to potential purchasers of the original NFTs (e.g. all the NFTs were minted on the same platform from the same account); or
    c. it was otherwise made clear to all potential purchasers of the original work's authentic NFTs that this work might be reused in the manner in which it is being used by the deriving work (e.g. by explaining this in the original NFT's description); or
    d. none of the authentic NFTs of the work or works not meaningfully different by the terms of section 2. were up for sale or auction at the time of minting the new NFT, and all of these NFTs' owners agreed to the minting.
+
    In all other cases, section 2. applies and a work's owner may no longer mint NFTs of the work or a work not meaningfully different from it by the terms of section 2.
+
    In cases c. and d. the attribution field of the new NFTs must mention the original NFTs for the new NFTs to be accepted into the registry.
+
    In case d., the attribution fields of the original NFTs must mention the new NFTs for the original NFTs to be accepted into the registry. If these were already registered in the KMANR without said attribution, they may be removed.
+
    An NFT is to be considered authentic for the purpose of this section if it complies with section 1., 2., and 4.
 
 ### B. Kleros NFT Collection Registry
