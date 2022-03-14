@@ -1,0 +1,11 @@
+#!/bin/bash
+set -euo pipefail
+
+cid=$(
+    node -e 'console.log(JSON.stringify({fileName: process.argv[1],
+                                         buffer: fs.readFileSync(process.argv[2])}))' \
+         "${1##*/}" "$1" |
+    curl -X POST -H 'Content-Type: application/json' --data @- 'https://ipfs.kleros.io/add' |
+    jq -r '.data[-1].hash'
+)
+echo "/ipfs/$cid/${1##*/}"

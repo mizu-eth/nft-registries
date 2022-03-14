@@ -1,6 +1,7 @@
 # Arguments:
 # - nft: true: NFT registry, false: NFT collection registry
 # - reg: true: registration metaevidence, false: clearing metaevidence
+# - policyURI: "/ipfs/Q.../policy.pdf"
 
 def reg: $reg;
 def nft: $nft;
@@ -23,7 +24,7 @@ def itemName: if nft then "NFT" else "NFT collection" end;
   },
   "category": "Curated Lists",
   "question": "Does the \(itemName) comply with the required criteria?",
-  "fileURI": "/ipfs/QmVntT2i7MkxDVhe5XVRQZyRBtdPyBKWajytFQ39C5AFZs/policy0.3.pdf",
+  "fileURI": $policyURI,
   "evidenceDisplayInterfaceURI": "/ipfs/QmNhJXtMrxeJu4fpchPruGrL93bm2M4VmDZ8pj4x6FqnHJ/index.html",
   "metadata": {
     "tcrTitle": tcrTitle,
