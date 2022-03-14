@@ -265,3 +265,27 @@ As per I.A.3., attribution information relevant to most NFTs in the collection m
 1. A submission entry's json file must not exceed 10kB (10,000 bytes) in size.
 2. If the name or author fields exceed 400 unicode codepoints, their ends may be truncated down to 400 codepoints or more, in which case the string "..." or ", ..." must be added to the end as appropriate.
 3. If the attribution field exceeds 800 unicode codepoints, it may be truncated down to 800 codepoints or more (while not truncating any of the kept lines), in which case a line containing only an IPFS link of the form /ipfs/... to a text file containing the rest of the lines must be added at the end.
+
+## IV. Removals
+
+Removal requests must generally be honored at any time if an entry can be shown to not be in compliance with all of the above rules. However, the following exceptions apply.
+
+### 1. Updates
+
+Some changes to an NFT or a collection's context may require the registry to be updated to reflect the changes. Updates of this sort are currently to be implemented by submitting a new updated entry and requesting the removal of the old one once the new submission has been accepted.
+
+To that effect, in the following cases (and absent other grounds for removal), a removal request is only to be considered valid if a new updated submission for the NFT or collection has already been accepted:
+
+1. A collection's thumbnail (Thumbnail field) is no longer appropriate (for instance, because the official thumbnail was changed by the collection's owner).
+2. An author (Author field) has changed their name.
+3. A webpage (Webpage field) is permanently unavailable.
+
+### 2. Policy Changes
+
+The following changes to the policy do not apply retroactively, that is, they are not grounds for removal if the submission was valid with regards to the policy at the time it was submitted. Other changes are generally retroactive unless they would lead to a large number of nonsensical removals (i.e. the change was likely accidentally omitted from this changelog).
+
+#### v0.4
+
+- Remove tolerance for semi-colons as a replacement for newlines in the Attribution field.
+- Switch Attribution field type from "text" to "long text".
+- Add Webpage field.
