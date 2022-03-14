@@ -1,6 +1,6 @@
 {
   "arbitrator": "0x9C1dA9A04925bDfDedf0f6421bC7EEa8305F9002",
   "arbitratorExtraData": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
-  "registrationMetaEvidence": "/ipfs/QmVwuFsLgY5WQRKipR1U8yAugTME5aD2hyNXHDTaDpyWG7/kmancr-reg.json",
-  "clearingMetaEvidence": "/ipfs/QmVNHCTB2xk6pzppbEEPDofZBDHAQuFKMd9399TtHyCokd/kmancr-clr.json"
+  "registrationMetaEvidence": "/ipfs/QmYurkkyawxeNSSn2uAmwTKJp1EQYPDN5PYPJqmnq7jtTj/kmancr-reg.json",
+  "clearingMetaEvidence": "/ipfs/QmebvSYuCHjW5adQLpt3ZXFmd4yQrBSMqPnsV8RqLE497z/kmancr-clr.json"
 }

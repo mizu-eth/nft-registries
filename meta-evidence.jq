@@ -86,7 +86,8 @@ def itemName: if nft then "NFT" else "NFT collection" end;
     ],
     "itemName": "\(itemName)",
     "itemNamePlural": "\(itemName)s",
-    "logoURI": "/ipfs/QmVNQsfSt1NTnGPANbpANsacnLRPNowcwD2LVNkGnqgLQU/list.svg",
+    "logoURI": (if nft then "/ipfs/QmVVBTtSvdvh6MyJr9XWgfFigvpxw3uG8wEcFTfdujjBai/kmanr.png"
+                       else "/ipfs/QmV2vTfULSHwV34y4i9WDYCHy5dyBtfivYyZQKvR6botRq/kmancr.png" end),
     "requireRemovalEvidence": true,
     "isTCRofTCRs": false,
     "relTcrDisabled": true
