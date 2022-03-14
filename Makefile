@@ -1,4 +1,22 @@
-all: meta-evidence
+all:
+
+update-call: arbitration-params
+	node -e 'var h = require("./helpers"); console.log("ADDRESS:", h.transactionBatcher.options.address); console.log("CALLDATA:", h.updateArbitrationParamsCall().encodeABI())'
+
+arbitration-params: arbitration-params/kmanr.json arbitration-params/kmancr.json
+
+arbitration-params/kmanr.json: meta-evidence/kmanr-reg.json.ipfspath \
+                               meta-evidence/kmanr-clr.json.ipfspath
+	jq --arg reg "$$(cat meta-evidence/kmanr-reg.json.ipfspath)" \
+	   --arg clr "$$(cat meta-evidence/kmanr-clr.json.ipfspath)" \
+	   '.registrationMetaEvidence = $$reg | .clearingMetaEvidence = $$clr' \
+	   $@ > $@.tmp && mv $@.tmp $@
+arbitration-params/kmancr.json: meta-evidence/kmancr-reg.json.ipfspath \
+                                meta-evidence/kmancr-clr.json.ipfspath
+	jq --arg reg "$$(cat meta-evidence/kmancr-reg.json.ipfspath)" \
+	   --arg clr "$$(cat meta-evidence/kmancr-clr.json.ipfspath)" \
+	   '.registrationMetaEvidence = $$reg | .clearingMetaEvidence = $$clr' \
+	   $@ > $@.tmp && mv $@.tmp $@
 
 upload: meta-evidence/kmanr-reg.json.ipfspath meta-evidence/kmanr-clr.json.ipfspath \
         meta-evidence/kmancr-reg.json.ipfspath meta-evidence/kmancr-clr.json.ipfspath
@@ -23,4 +41,4 @@ policy.pdf.ipfspath: policy.pdf
 policy.pdf: policy.md
 	pandoc -V geometry:margin=1in $< -o $@
 
-.PHONY: all meta-evidence upload
+.PHONY: all update-call arbitration-params meta-evidence upload

@@ -1,0 +1,6 @@
+{
+  "arbitrator": "0x9C1dA9A04925bDfDedf0f6421bC7EEa8305F9002",
+  "arbitratorExtraData": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000003",
+  "registrationMetaEvidence": "/ipfs/QmYzbmpkEFhsufVNaWavUQHCvKLwsGQ2nXegyM8L5tYdgR/kmancr-reg-meta-evidence.json",
+  "clearingMetaEvidence": "/ipfs/QmTUz7FRVi8yiz2256DB1HjjzDCa1orzJiCmMeRs6ULy87/kmancr-clr-meta-evidence.json"
+}
