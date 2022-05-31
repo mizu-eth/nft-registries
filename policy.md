@@ -290,3 +290,13 @@ The following changes to the policy do not apply retroactively, that is, they ar
 - Remove tolerance for semi-colons as a replacement for newlines in the Attribution field.
 - Switch Attribution field type from "text" to "long text".
 - Add Webpage field.
+
+ 
+
+ 
+
+\footnotesize
+```
+This document © 2022 by mizu.eth is licensed under CC BY-SA 4.0.
+To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
+```
