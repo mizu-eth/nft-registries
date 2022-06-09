@@ -1,7 +1,7 @@
 all:
 
 update-call: arbitration-params
-	node -e 'var h = require("./helpers"); console.log("ADDRESS:", h.transactionBatcher.options.address); console.log("CALLDATA:", h.updateArbitrationParamsCall().encodeABI())'
+	node -e 'var h = require("./helpers"); h.printArbitrationParamUpdateCalls()'
 
 arbitration-params: arbitration-params/kmanr.json arbitration-params/kmancr.json
 

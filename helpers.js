@@ -7,9 +7,6 @@ const lgtcrAbi = JSON.parse(fs.readFileSync('abi/LightGeneralizedTCR.json'))
 const kmanr = new web3.eth.Contract(lgtcrAbi, '0xD5994f15BE9987104D9821AA99d1C97227c7C08c')
 const kmancr = new web3.eth.Contract(lgtcrAbi, '0x2f19f817bbf800b487b7f2e51f24ad5ea0222463')
 
-const tbAbi = JSON.parse(fs.readFileSync('abi/TransactionBatcher.json'))
-const transactionBatcher = new web3.eth.Contract(tbAbi, '0xA73A872eFD768bb23efb24CEeB9e330bcCA259D6')
-
 async function currentArbitrationParams(registry) {
     const arbitrator = await registry.methods.arbitrator().call()
     const arbitratorExtraData = await registry.methods.arbitratorExtraData().call()
@@ -43,15 +40,14 @@ function changeArbitrationParamsCallFromFile(registry, jsonFile) {
                 params.clearingMetaEvidence)
 }
 
-function updateArbitrationParamsCall() {
-    var kmanrUpdate = changeArbitrationParamsCallFromFile(kmanr, "arbitration-params/kmanr.json")
-                        .encodeABI()
-    var kmancrUpdate = changeArbitrationParamsCallFromFile(kmancr, "arbitration-params/kmancr.json")
-                        .encodeABI()
-    return transactionBatcher.methods.batchSend(
-                [kmanr.options.address, kmancr.options.address],
-                [0, 0],
-                [kmanrUpdate, kmancrUpdate])
+function printArbitrationParamUpdateCalls() {
+    console.log("KMANR ADDRESS:", kmanr.options.address)
+    console.log("CALLDATA:", changeArbitrationParamsCallFromFile(kmanr, "arbitration-params/kmanr.json")
+                                .encodeABI())
+    console.log()
+    console.log("KMANCR ADDRESS:", kmancr.options.address)
+    console.log("CALLDATA:", changeArbitrationParamsCallFromFile(kmancr, "arbitration-params/kmancr.json")
+                                .encodeABI())
 }
 
 module.exports = {
@@ -61,5 +57,5 @@ module.exports = {
     transactionBatcher,
     currentArbitrationParams,
     changeArbitrationParamsCallFromFile,
-    updateArbitrationParamsCall
+    printArbitrationParamUpdateCalls
 }
