@@ -51,7 +51,7 @@ def itemName: if nft then "NFT" else "NFT collection" end;
       {
         "label": "Collection",
         "description": "The collection's address",
-        "type": "address",
+        "type": "rich address",
         "isIdentifier": true
       },
       (if nft then {
@@ -60,12 +60,6 @@ def itemName: if nft then "NFT" else "NFT collection" end;
         "type": "number",
         "isIdentifier": true
       } else empty end),
-      {
-        "label": "Chain ID",
-        "description": "The ID of the chain on which the \(if nft then "NFT" else "collection" end) resides",
-        "type": "number",
-        "isIdentifier": true
-      },
       {
         "label": "Webpage",
         "description": "The \(if nft then "NFT" else "collection" end)'s canonical webpage",

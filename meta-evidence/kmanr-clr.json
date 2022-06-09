@@ -13,7 +13,7 @@
   },
   "category": "Curated Lists",
   "question": "Does the NFT comply with the required criteria?",
-  "fileURI": "/ipfs/QmQyEgs7r3TnBZtQaRENjfBVPCJsPWXAj3JrN8dCbsyHjQ/policy.pdf",
+  "fileURI": "/ipfs/QmbjQW9NF123vccoVZU19UAXzWdN6E36JehXWuWGc7xRcZ/policy.pdf",
   "evidenceDisplayInterfaceURI": "/ipfs/QmNhJXtMrxeJu4fpchPruGrL93bm2M4VmDZ8pj4x6FqnHJ/index.html",
   "metadata": {
     "tcrTitle": "Authentic NFT Registry",
@@ -40,18 +40,12 @@
       {
         "label": "Collection",
         "description": "The collection's address",
-        "type": "address",
+        "type": "rich address",
         "isIdentifier": true
       },
       {
         "label": "Token ID",
         "description": "The token ID",
-        "type": "number",
-        "isIdentifier": true
-      },
-      {
-        "label": "Chain ID",
-        "description": "The ID of the chain on which the NFT resides",
         "type": "number",
         "isIdentifier": true
       },

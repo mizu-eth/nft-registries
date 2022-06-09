@@ -1,4 +1,4 @@
-# Kleros Minimal Authentic NFT Registry and Kleros Minimal Authentic NFT Collection Registry Policy
+# Kleros Minimal Authentic NFT Registry and Kleros Minimal Authentic NFT Collection Registry Policy v0.5
 
  
 
@@ -120,12 +120,11 @@ Following are the fields of each entry in the KMANR. Detailed rules for these fi
 1. Thumbnail (image): A thumbnail of the NFT
 2. Name (text, indexed): Official name of the NFT
 3. Author (text, indexed): Author's name
-4. Collection (address, indexed): The collection's address
+4. Collection (rich address, indexed): The collection's address
 5. Token ID (number, indexed): The token ID
-6. Chain ID (number, indexed): The chain ID of the network on which the NFT resides
-7. Webpage (link): The NFT's canonical webpage
-8. Proof (file, pdf or txt): Optional proof of authenticity
-9. Attribution (long text): Optional attribution
+6. Webpage (link): The NFT's canonical webpage
+7. Proof (file, pdf or txt): Optional proof of authenticity
+8. Attribution (long text): Optional attribution
 
 #### 1. Thumbnail
 
@@ -164,19 +163,15 @@ The name the author of the contents used when publishing the work.
 
 #### 4. Collection
 
-The address of the NFT collection.
+The address of the NFT collection in [CAIP-10 format](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-10.md). For now, only the following address formats are allowed:
+
+- `eip155:<chain ID>:0x<address>` where `<chain ID>` is the chain ID of the blockchain on which the NFT resides (e.g. 1 for Ethereum, 100 for Gnosis Chain).  For informational purposes, a list of chain IDs may for instance be found here: https://chainlist.org/. This website is not to be considered authoritative however.
 
 #### 5. Token ID
 
 The token ID of the NFT being registered within the collection.
 
-#### 6. Chain ID
-
-This field must contain the chain ID of the EVM blockchain on which the NFT resides (e.g. 1 for Ethereum, 100 for Gnosis Chain). For informational purposes, a list of chain IDs may for instance be found here: https://chainlist.org/. This website is not to be considered authoritative however.
-
-**For now, only Ethereum is allowed, so the value must be 1 (and the NFT must reside on the Ethereum chain).**
-
-#### 7. Webpage
+#### 6. Webpage
 
 A link to the NFT's webpage.
 
@@ -185,7 +180,7 @@ A link to the NFT's webpage.
    b. the NFT's page on a trustworthy NFT aggregator that displays or links to the NFT's collection address and token ID.
 2. The page must be live at the time of submission and must not become permanently unavailable.
 
-#### 8. Proof
+#### 7. Proof
 
 The proof field must be used to provide proof that minting of the NFT was authorized by the author when this is not obvious or if there are reasons to be suspicious.
 
@@ -198,7 +193,7 @@ Such a proof can for instance be in the form of a public message written by an a
 
 In most cases, a proof will not be needed. For instance, if the NFT was minted by the author themselves on a reputable NFT platform in which the author's Twitter account has been verified, or if the author's website links back to the author's NFT collection. On the other hand, if the minter's social media account or website has only recently been active or publishing works, this would be considered cause for suspicion and further proof must be provided at the time of submission, in the form of progress photos or snapshots for instance.
 
-#### 9. Attribution
+#### 8. Attribution
 
 Attribution for works the NFT's content derives from, as per I.A.3..
 
@@ -214,11 +209,10 @@ Following are the fields of each entry in the KMANCR. Detailed rules for these f
 1. Thumbnail (image): A thumbnail representative of the collection
 2. Name (text, indexed): Official name of the collection
 3. Author (text, indexed): Author's name if relevant
-4. Collection (address, indexed): The collection's address
-5. Chain ID (number, indexed): The chain ID of the network on which the NFT resides
-6. Webpage (link): The collection's canonical webpage
-7. Proof (file, pdf or txt): Optional proof of authenticity
-8. Attribution (long text): Optional attribution
+4. Collection (rich address, indexed): The collection's address
+5. Webpage (link): The collection's canonical webpage
+6. Proof (file, pdf or txt): Optional proof of authenticity
+7. Attribution (long text): Optional attribution
 
 #### 1. Thumbnail
 
@@ -236,15 +230,9 @@ If the collection has a specific author or limited set of authors, this field mu
 
 #### 4. Collection
 
-The address of the NFT collection.
+The address of the NFT collection. Same as A.4.
 
-#### 5. Chain ID
-
-Same as A.6.
-
-**For now, only Ethereum is allowed, so the value must be 1 (and the NFT collection must reside on the Ethereum chain).**
-
-#### 6. Webpage
+#### 5. Webpage
 
 A link to the collection's webpage.
 
@@ -253,11 +241,11 @@ A link to the collection's webpage.
    b. the collection's page on a trustworthy NFT aggregator that displays or links to the collection's address.
 2. The page must be live at the time of submission and must not become permanently unavailable.
 
-#### 7. Proof
+#### 6. Proof
 
 If a proof would be needed to include any of the NFTs in this collection into the KMANR, a document must be provided here with relevant proofs —except for NFTs already registered in the KMANR— following the same rules as A.7. except that the maximum file size is increased to 5MB.
 
-#### 8. Attribution
+#### 7. Attribution
 
 As per I.A.3., attribution information relevant to most NFTs in the collection must be provided here following the same rules as A.8.., except for NFTs already registered in the KMANR. If only one or a few NFTs in the collection are affected by some attribution, they must be registered in the KMANR with proper attribution or the collection will not be eligible for inclusion into the KMANCR or will become eligible for removal.
 
@@ -284,6 +272,11 @@ To that effect, in the following cases (and absent other grounds for removal), a
 ### 2. Policy Changes
 
 The following changes to the policy do not apply retroactively, that is, they are not grounds for removal if the submission was valid with regards to the policy at the time it was submitted. Other changes are generally retroactive unless they would lead to a large number of nonsensical removals (i.e. the change was likely accidentally omitted from this changelog).
+
+#### v0.5
+
+- Remove Chain ID field.
+- Switch Collection field type from "address" to "rich address".
 
 #### v0.4
 
